@@ -3,12 +3,10 @@
 <head>
     <style>
         #content {
-          width: 1440px;
-          height: 100vh;
-          margin-left: auto;
-          margin-right: auto;
+          width: 100%;
+          height: calc(100vh + 98px);
           margin-top: -50px;
-          margin-bottom: auto;
+          margin-bottom: 0;
           border: 0px solid rgba(255, 255, 255, 0);
           outline: 1px solid white;
           outline-offset: -1px;
@@ -19,11 +17,17 @@
             margin-bottom: -1px;
             margin-left: 0px;
             margin-right: 0px;
+            width: 100%;
+            height: 100%;
         }
 
         #iframefullscreen {
-            display: flex;
-            align-items: center;
+            display: block;
+            max-width: 1440px;
+            max-height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            /*align-items: center;*/
         }
       </style>
 
