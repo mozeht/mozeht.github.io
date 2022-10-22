@@ -18,6 +18,15 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-TVRDJZ3');</script>
     <!-- End Google Tag Manager -->
+
+    <script>
+        const googleAdUrl = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
+        try {
+         fetch(new Request(googleAdUrl)).catch(_ => dataLayer.push({'event':'AdBlockerUsersTrigger'}));  
+        } catch (e) {
+          dataLayer.push({'event':'AdBlockerUsersTrigger'});
+        } 
+      </script>
     <style>
         #content {
           width: 100%;
